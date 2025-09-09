@@ -1,0 +1,48 @@
+$ cd /workspace/shadcn-ui
+$ pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+$ pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+/workspace/shadcn-ui/src/components/VoiceTranslationCard.tsx
+  36:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  42:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  42:87  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:49  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/workspace/shadcn-ui/src/pages/Index.tsx
+  283:4  error  Parsing error: ')' expected
+
+✖ 6 problems (6 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.
+$ pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+/workspace/shadcn-ui/src/components/VoiceTranslationCard.tsx
+  39:14  error  Parsing error: Declaration or statement expected
+
+/workspace/shadcn-ui/src/pages/Index.tsx
+  283:4  error  Parsing error: ')' expected
+
+/workspace/shadcn-ui/src/types/speech.d.ts
+  38:1  error  Unexpected var, use let or const instead  no-var
+  43:1  error  Unexpected var, use let or const instead  no-var
+
+✖ 4 problems (4 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+ ELIFECYCLE  Command failed with exit code 1.
